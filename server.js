@@ -19,7 +19,8 @@ app.get('/players', function(req,res){
 
         response.on('end', function(){
             var array = {
-                content: JSON.parse(body)
+                content: JSON.parse(body),
+                type: 'player'
             };
             res.render('overview', array);
         })
@@ -37,7 +38,8 @@ app.get('/teams', function(req, res){
 		});
 		response.on('end', function(){
 			var array = {
-				content: JSON.parse(body)
+				content: JSON.parse(body),
+				type: 'team'
 			};
 			res.render('overview', array);
 		})

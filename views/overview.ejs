@@ -9,8 +9,11 @@
 <% for(var i = 0; i < content.length; i++) { %>
 <div>
     <img src="<%= content[i].image %>" />
+    <h3> <%= type %> </h3>
 
     <h3> <%= content[i].name %> </h3>
+
+    <button><a href="<%=type%>/<%= content[i]._id %>">Details</a></button>
 </div>
 <% } %>
 </body>
