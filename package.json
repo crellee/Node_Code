@@ -1,0 +1,20 @@
+{
+  "name": "node_code",
+  "version": "1.0.0",
+  "description": "using an api and the curriculum from the node js class",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crellee/Node_Code.git"
+  },
+  "author": "crellee/roije",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crellee/Node_Code/issues"
+  },
+  "homepage": "https://github.com/crellee/Node_Code#readme"
+}
