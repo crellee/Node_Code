@@ -47,5 +47,35 @@ app.get('/teams', function(req, res){
 
 });
 
+app.get('/player/:id', function(req, res) {
+    var url = 'http://soccerapi.herokuapp.com/api/players/' + req.params.id;
+    http.get(url, function(response) {
+        var player = '';
+        response.on('data', function(chunk){
+            player += chunk;
+        });
+
+        response.on('end', function(){
+
+            res.render('details', JSON.parse(player));
+        })
+    })
+});
+
+app.get('/team/:id', function(req, res) {
+    var url = 'http://soccerapi.herokuapp.com/api/clubs/' + req.params.id;
+    http.get(url, function(response) {
+        var club = '';
+        response.on('data', function(chunk){
+            club += chunk;
+        });
+
+        response.on('end', function(){
+
+            res.render('details', JSON.parse(club));
+        })
+    })
+});
+
 
 app.listen(3000);
