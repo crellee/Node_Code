@@ -57,7 +57,7 @@ app.get('/player/:id', function(req, res) {
 
         response.on('end', function(){
 
-            res.render('details', JSON.parse(player));
+            res.render('detailedplayer', JSON.parse(player));
         })
     })
 });
@@ -72,7 +72,7 @@ app.get('/team/:id', function(req, res) {
 
         response.on('end', function(){
 
-            res.render('details', JSON.parse(club));
+            res.render('detailedteam', JSON.parse(club));
         })
     })
 });
