@@ -11,25 +11,17 @@ app.get('/', function(req,res){
 
 app.get('/players', function(req,res){
     var url = 'http://soccerapi.herokuapp.com/api/players';
-    var players = [];
     http.get(url, function(response){
-        console.log("Her");
         var body = '';
         response.on('data', function(chunk){
             body+=chunk;
         });
 
         response.on('end', function(){
-            console.log("Der");
-            var hey = JSON.parse(body);
-            players = hey;
-            console.log(players);
-            console.log("Got a response: ", hey);
-            var player = {
-                name: players[0].name
+            var array = {
+                content: JSON.parse(body)
             };
-            console.log(player.name);
-            res.render('overview', player);
+            res.render('overview', array);
         })
     })
 

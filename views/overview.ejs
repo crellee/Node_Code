@@ -5,9 +5,13 @@
     <title>Title</title>
 </head>
 <body>
+
+<% for(var i = 0; i < content.length; i++) { %>
 <div>
-    <img />
-    <h3> <%= name %> </h3>
+    <img src="<%= content[i].image %>" />
+
+    <h3> <%= content[i].name %> </h3>
 </div>
+<% } %>
 </body>
 </html>
