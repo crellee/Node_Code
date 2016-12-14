@@ -3,6 +3,7 @@ var app = express();
 var http = require('http');
 var fs = require('fs');
 app.set('view engine', 'ejs');
+var os = require('os');
 
 
 app.get('/', function(req, res){
@@ -71,6 +72,16 @@ app.get('/player/:id', function(req, res) {
                 });
 
                 resp.on('end', function(){
+
+                    //Write to file
+                    var date = new Date();
+                    fs.appendFile(__dirname + "/log.txt", "Request was made at " + date + " by " + os.hostname() + " for: \n" + JSON.stringify(playerJSON) + "\n-------\n", function(err) {
+                        if(err) {
+                            return console.log(err);
+                        }
+                        console.log("The file was saved!");
+                    });
+
                     var clubJSON = JSON.parse(team);
                     playerJSON.clubName = clubJSON.name;
                     playerJSON.clubImage = clubJSON.image;
