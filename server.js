@@ -56,8 +56,21 @@ app.get('/player/:id', function(req, res) {
         });
 
         response.on('end', function(){
+            var playerJSON = JSON.parse(player);
+            var url = 'http://soccerapi.herokuapp.com/api/clubs/' + playerJSON.clubId;
+            http.get(url, function(resp){
+                var team = '';
+                resp.on('data', function(data){
+                    team += data;
+                });
 
-            res.render('detailedplayer', JSON.parse(player));
+                resp.on('end', function(){
+                    var teamJSON = JSON.parse(team);
+                    playerJSON.teamName = teamJSON.name;
+                    res.render('detailedplayer', playerJSON);
+                });
+            });
+
         })
     })
 });
