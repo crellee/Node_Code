@@ -1,11 +1,15 @@
 var express = require('express');
 var app = express();
 var http = require('http');
-
+var fs = require('fs');
 app.set('view engine', 'ejs');
 
-app.get('/', function(req,res){
-    res.render('index');
+
+app.get('/', function(req, res){
+        fs.readFile('menuitems.json', 'utf-8', function(err, data) {
+            res.render('index', JSON.parse(data));
+
+        });
 });
 
 app.use('/css',express.static(__dirname + '/css'));
