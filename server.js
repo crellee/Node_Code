@@ -67,8 +67,9 @@ app.get('/player/:id', function(req, res) {
                 });
 
                 resp.on('end', function(){
-                    var teamJSON = JSON.parse(team);
-                    playerJSON.teamName = teamJSON.name;
+                    var clubJSON = JSON.parse(team);
+                    playerJSON.clubName = clubJSON.name;
+                    playerJSON.clubImage = clubJSON.image;
                     res.render('detailedplayer', playerJSON);
                 });
             });
@@ -90,6 +91,10 @@ app.get('/team/:id', function(req, res) {
             res.render('detailedteam', JSON.parse(club));
         })
     })
+});
+
+app.get('/createplayerform', function(req, res){
+    res.render('createplayerform');
 });
 
 app.listen(3000);
