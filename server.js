@@ -8,6 +8,8 @@ app.get('/', function(req,res){
     res.render('index');
 });
 
+app.use('/css',express.static(__dirname + '/css'));
+
 
 app.get('/players', function(req,res){
     var url = 'http://soccerapi.herokuapp.com/api/players';
@@ -76,6 +78,5 @@ app.get('/team/:id', function(req, res) {
         })
     })
 });
-
 
 app.listen(3000);

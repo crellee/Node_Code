@@ -1,0 +1,19 @@
+.player-div{
+   background-repeat: no-repeat;
+   height: 160px;
+   width: 160px;
+   text-align: center;
+   background-color: #000;
+   color: #fff;
+   -webkit-filter: grayscale();
+   -webkit-filter: brightness(50%);
+  background-position: center;
+ }
+
+.player-div:hover{
+  -webkit-filter: blur(0);
+}
+
+.player-div:hover > h3 {
+	display: none;
+}
