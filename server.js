@@ -9,7 +9,6 @@ var os = require('os');
 app.get('/', function(req, res){
         fs.readFile('menuitems.json', 'utf-8', function(err, data) {
             res.render('index', JSON.parse(data));
-
         });
 });
 

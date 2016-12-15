@@ -5,3 +5,39 @@ Request was made at Wed Dec 14 2016 14:51:59 GMT+0100 (CET)for: {"_id":"584e7f16
 Request was made at Wed Dec 14 2016 14:55:18 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
 {"_id":"58513aa7022cd2000426d28b","name":"Luka Modric","clubId":"584e7e5cfe1e2300049c9461","image":"http://futhead.cursecdn.com/static/img/17/players/177003.png","position":"CM"}
 -------
+Request was made at Wed Dec 14 2016 14:58:30 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"584e7fd4fe1e2300049c9466","name":"Luis Suárez","image":"http://futhead.cursecdn.com/static/img/17/players/176580.png","clubId":"584e7e4dfe1e2300049c9460","position":"CF"}
+-------
+Request was made at Wed Dec 14 2016 19:57:55 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"58513aa7022cd2000426d28b","name":"Luka Modric","clubId":"584e7e5cfe1e2300049c9461","image":"http://futhead.cursecdn.com/static/img/17/players/177003.png","position":"CM"}
+-------
+Request was made at Wed Dec 14 2016 19:58:16 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"584e7fd4fe1e2300049c9465","name":"Lionel Messi","image":"http://futhead.cursecdn.com/static/img/17/players/158023.png","clubId":"584e7e4dfe1e2300049c9460","position":"RM"}
+-------
+Request was made at Wed Dec 14 2016 19:58:50 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"584e7fd4fe1e2300049c9468","name":"Paul Pogba","image":"http://futhead.cursecdn.com/static/img/17/players/195864.png","clubId":"584e7e7cfe1e2300049c9462","position":"CM"}
+-------
+Request was made at Wed Dec 14 2016 20:26:27 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"584e7fd4fe1e2300049c9468","name":"Paul Pogba","image":"http://futhead.cursecdn.com/static/img/17/players/195864.png","clubId":"584e7e7cfe1e2300049c9462","position":"CM"}
+-------
+Request was made at Wed Dec 14 2016 20:26:31 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"58513aa7022cd2000426d28b","name":"Luka Modric","clubId":"584e7e5cfe1e2300049c9461","image":"http://futhead.cursecdn.com/static/img/17/players/177003.png","position":"CM"}
+-------
+Request was made at Wed Dec 14 2016 20:26:34 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"584e7fd4fe1e2300049c9467","name":"Zlatan Ibrahimovic","image":"http://futhead.cursecdn.com/static/img/17/players/41236.png","clubId":"584e7e7cfe1e2300049c9462","position":"CF"}
+-------
+Request was made at Wed Dec 14 2016 20:26:37 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"584e7fd4fe1e2300049c9466","name":"Luis Suárez","image":"http://futhead.cursecdn.com/static/img/17/players/176580.png","clubId":"584e7e4dfe1e2300049c9460","position":"CF"}
+-------
+Request was made at Wed Dec 14 2016 20:26:39 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"584e7fd4fe1e2300049c9465","name":"Lionel Messi","image":"http://futhead.cursecdn.com/static/img/17/players/158023.png","clubId":"584e7e4dfe1e2300049c9460","position":"RM"}
+-------
+Request was made at Wed Dec 14 2016 20:26:42 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"584e7f16fe1e2300049c9464","name":"Gareth Bale","image":"http://futhead.cursecdn.com/static/img/17/players/173731.png","clubId":"584e7e5cfe1e2300049c9461","position":"RM"}
+-------
+Request was made at Wed Dec 14 2016 20:26:45 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"584e7f16fe1e2300049c9463","name":"Cristiano Ronaldo","image":"http://futhead.cursecdn.com/static/img/17/players/20801.png","clubId":"584e7e5cfe1e2300049c9461","position":"LM"}
+-------
+Request was made at Wed Dec 14 2016 20:28:57 GMT+0100 (CET) by Rois-MacBook-Pro.local for: 
+{"_id":"58519d6efce3d3000456fd7b","name":"Toni Kroos","clubId":"584e7e5cfe1e2300049c9461","image":"http://futhead.cursecdn.com/static/img/17/players/182521.png","position":"CM"}
+-------
