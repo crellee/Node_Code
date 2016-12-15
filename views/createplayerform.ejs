@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -10,10 +14,17 @@
             <h1>Create player</h1>
             <form action="https://soccerapi.herokuapp.com/api/players" method="post" class="form-horizontal">
                 <input type="text" name="name" placeholder="Player name">
-                <input type="text" name="clubId" placeholder="Club id">
+<!--                <input type="text" name="clubId" placeholder="Club id">-->
                 <input type="text" name="image" placeholder="Image">
                 <input type="text" name="position" placeholder="Position">
                 <input type="submit" value="Submit" class="btn btn-success">
+
+                <select name="clubId">
+                <% for(var i = 0; i < content.length; i++) { %>
+                <option value="<%= content[i]._id %>"> <%= content[i].name %> </option>
+<% } %>
+                </select>
+
             </form>
         </div>
     </div>
